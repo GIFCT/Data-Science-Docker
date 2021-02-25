@@ -20,8 +20,8 @@ docker exec -it data-science bash
 ```
 2. MacOS or Windows:
 ```
-docker run -d --name data-science -v ~/GitProjects:/root/GitProjects -p 8888:8888 -i gifct/data-science
+docker run --name data-science -v ~/GitProjects:/root/GitProjects -p 8888:8888 -i gifct/data-science
 docker exec -it data-science bash
 ```
 
-To use Jupyter Lab on your host machine, just navigate to `localhost:8888` and enter the token `data-science`.
+To access Jupyter Lab on your host machine, just navigate to `localhost:8888` and enter the token specified in your terminal.
