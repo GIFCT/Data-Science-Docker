@@ -33,10 +33,20 @@ RUN conda install --quiet --yes \
     'scikit-learn=0.24.*' \
     'scipy=1.6.*' \
     'sqlalchemy=1.3.*' \
+    'geopy=2.1.*' \
+    'pygeohash=1.2.*' \
+    'chart_studio=1.1.*' \
+    'bokeh=2.3.*' \
+    'keras=2.4.*'\
+    'tensorflow=2.4.*' \
+    'seaborn=0.11.*' \
+    'plotly=4.14.*' \
+    'nltk=3.*' \
+    'wordcloud-1.8.*' \
     'statsmodels=0.12.*' &&\
     conda clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
-    fix-permissions "/home/${NB_USER}"
+    fix-permissions "/home/${NB_USER}",
 
 # Import matplotlib the first time to build the font cache.
 ENV XDG_CACHE_HOME="/home/${NB_USER}/.cache/"

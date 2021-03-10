@@ -25,3 +25,6 @@ docker exec -it data-science bash
 ```
 
 To access Jupyter Lab on your host machine, just navigate to `localhost:8888` and enter the token specified in your terminal.
+
+#Build
+docker build -t data-science .
